@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 20vw;
+    margin-left: 10vw;
+    // margin-top: 1rem;
+    // background-color: black;
+    text-align: right;
+    float: left;
+}
+
+nav{
+    width: 69vw;
+    margin-top: 1rem;
+    padding-left: 25vw;
+    text-decoration: none;
+    color: #333333;
+    ul{
+        margin-left: 5rem;
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        li{
+            a{
+                color: #333333;
+                text-decoration: none;
+            }
+            padding: 0.7rem;
+        }
+    }
+}
