@@ -8,13 +8,15 @@ function App() {
   return (
     <div className="App">
       <>
-      <Header />
+      <div className="topSecion">
+        <Header />
+        <Nav />
+      </div>
+      
 
-      <Nav />
+      <Main className="mainSection" />
 
-      <Main />
-
-      <Footer />
+      <Footer className="footerSection" />
       </>
     </div>
   );

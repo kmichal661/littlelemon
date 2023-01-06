@@ -3,32 +3,171 @@
     padding: 0;
 }
 
-header{
-    width: 20vw;
-    margin-left: 10vw;
-    // margin-top: 1rem;
-    // background-color: black;
-    text-align: right;
-    float: left;
+body{
+    text-align: center;
 }
 
-nav{
-    width: 69vw;
-    margin-top: 1rem;
-    padding-left: 25vw;
-    text-decoration: none;
-    color: #333333;
-    ul{
-        margin-left: 5rem;
-        display: flex;
-        list-style-type: none;
-        text-align: center;
-        li{
-            a{
-                color: #333333;
-                text-decoration: none;
+
+.topSecion{
+    margin-left: auto;
+    margin-right: auto;
+    header{
+        width: 20vw;
+        margin-left: 10vw;
+        // margin-top: 1rem;
+        // background-color: black;
+        text-align: right;
+        float: left;
+    }
+    
+    nav{
+        width: 79vw;
+        margin-top: 1rem;
+        padding-left: 25vw;
+        text-decoration: none;
+        color: #333333;
+        ul{
+            margin-left: 6rem;
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+            li{
+                a{
+                    color: #333333;
+                    text-decoration: none;
+                }
+                padding: 0.7rem;
             }
-            padding: 0.7rem;
         }
     }
 }
+
+
+main{
+    .mainHeadSection{
+        background-color: #495E57;
+    h1{
+        margin-top: 4rem;
+        color: #F4CE14;
+    }
+    h2{
+        color: #EDEFEE;
+    }
+    p{
+        color: #EDEFEE;
+    }
+    .btn{
+        background-color: #F4CE14;
+        color: black;
+        font-size: 0.9em;
+    }
+    .imageSection{
+        text-align: center;
+        .imageWrapper{
+            padding: 2rem;
+        }
+    }
+    }
+    
+
+    .mainSpecialsSection{
+        margin-left: auto;
+        text-align: center;
+        margin-right: auto;
+        margin-top: 3rem;
+        .cardSection{
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+            .card{
+                padding: 0;
+                margin-bottom: 2rem;
+                margin-left: 3rem;
+                text-align: left;
+                .card-title{
+                    display: flex;
+                    span:last-child{
+                        // text-align: left;
+                        color: #EE9972;
+                        margin-left: auto;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .mainTestemonials{
+        background-color: #495E57;
+        color: white;
+        .col{
+            background-color: #EDEFEE;
+            // border: 1px solid black;
+            margin: 1rem;
+            border-radius: 15px;
+        }
+        h1{
+            text-align: center;
+            padding: 3rem;
+            
+        }
+    }
+    .mainLemonSection{
+        margin-top: 3rem;
+        h1{
+            color: #F4CE14;
+            margin-top: 1rem;
+        }
+        h3{
+            margin-top: 1rem;
+            color: #333333;
+        }
+        p{
+            margin-top: 2rem;
+            color: gray;
+        }
+
+    .col:last-child{
+        text-align: center;
+
+    }
+
+    }  
+}
+
+footer{
+    margin-top: 3rem;
+    background-color: #495E57;
+    .footerMenu{
+        padding: 1rem;
+        ul{
+            list-style-type: none;
+            li{
+                a{
+                    color: #333333;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footerContact{
+        padding: 1rem;
+        p{
+            color: #333333;
+        }
+    }
+
+    .socialMediaLinksFooter{
+        padding: 1rem;
+        a{
+            text-decoration: none;
+            color: #333333;
+        }
+    }
+}
+
+
+

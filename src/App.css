@@ -3,32 +3,148 @@
   padding: 0;
 }
 
-header {
+body {
+  text-align: center;
+}
+
+.topSecion {
+  margin-left: auto;
+  margin-right: auto;
+}
+.topSecion header {
   width: 20vw;
   margin-left: 10vw;
   text-align: right;
   float: left;
 }
-
-nav {
-  width: 69vw;
+.topSecion nav {
+  width: 79vw;
   margin-top: 1rem;
   padding-left: 25vw;
   text-decoration: none;
   color: #333333;
 }
-nav ul {
-  margin-left: 5rem;
+.topSecion nav ul {
+  margin-left: 6rem;
   display: flex;
   list-style-type: none;
   text-align: center;
 }
-nav ul li {
+.topSecion nav ul li {
   padding: 0.7rem;
 }
-nav ul li a {
+.topSecion nav ul li a {
   color: #333333;
   text-decoration: none;
+}
+
+main .mainHeadSection {
+  background-color: #495E57;
+}
+main .mainHeadSection h1 {
+  margin-top: 4rem;
+  color: #F4CE14;
+}
+main .mainHeadSection h2 {
+  color: #EDEFEE;
+}
+main .mainHeadSection p {
+  color: #EDEFEE;
+}
+main .mainHeadSection .btn {
+  background-color: #F4CE14;
+  color: black;
+  font-size: 0.9em;
+}
+main .mainHeadSection .imageSection {
+  text-align: center;
+}
+main .mainHeadSection .imageSection .imageWrapper {
+  padding: 2rem;
+}
+main .mainSpecialsSection {
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+main .mainSpecialsSection .cardSection {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+main .mainSpecialsSection .cardSection .card {
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  text-align: left;
+}
+main .mainSpecialsSection .cardSection .card .card-title {
+  display: flex;
+}
+main .mainSpecialsSection .cardSection .card .card-title span:last-child {
+  color: #EE9972;
+  margin-left: auto;
+}
+main .mainTestemonials {
+  background-color: #495E57;
+  color: white;
+}
+main .mainTestemonials .col {
+  background-color: #EDEFEE;
+  margin: 1rem;
+  border-radius: 15px;
+}
+main .mainTestemonials h1 {
+  text-align: center;
+  padding: 3rem;
+}
+main .mainLemonSection {
+  margin-top: 3rem;
+}
+main .mainLemonSection h1 {
+  color: #F4CE14;
+  margin-top: 1rem;
+}
+main .mainLemonSection h3 {
+  margin-top: 1rem;
+  color: #333333;
+}
+main .mainLemonSection p {
+  margin-top: 2rem;
+  color: gray;
+}
+main .mainLemonSection .col:last-child {
+  text-align: center;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: #495E57;
+}
+footer .footerMenu {
+  padding: 1rem;
+}
+footer .footerMenu ul {
+  list-style-type: none;
+}
+footer .footerMenu ul li a {
+  color: #333333;
+  text-decoration: none;
+}
+footer .footerContact {
+  padding: 1rem;
+}
+footer .footerContact p {
+  color: #333333;
+}
+footer .socialMediaLinksFooter {
+  padding: 1rem;
+}
+footer .socialMediaLinksFooter a {
+  text-decoration: none;
+  color: #333333;
 }
 
 /*# sourceMappingURL=App.css.map */
