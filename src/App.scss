@@ -11,6 +11,8 @@ body{
 .topSecion{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     header{
         width: 20vw;
         margin-left: 10vw;
@@ -46,17 +48,23 @@ body{
 main{
     .mainHeadSection{
         background-color: #495E57;
+        padding: 2rem;
     h1{
         margin-top: 4rem;
         color: #F4CE14;
+        font-size: 2rem;
     }
     h2{
+        margin-top: 2rem;
         color: #EDEFEE;
+        font-size: 1.5rem;
     }
     p{
+        margin-top: 2rem;
         color: #EDEFEE;
     }
     .btn{
+        margin-top: 2rem;
         background-color: #F4CE14;
         color: black;
         font-size: 0.9em;
@@ -84,7 +92,7 @@ main{
             .card{
                 padding: 0;
                 margin-bottom: 2rem;
-                margin-left: 3rem;
+                margin-left: 2rem;
                 text-align: left;
                 .card-title{
                     display: flex;
@@ -103,24 +111,36 @@ main{
         background-color: #495E57;
         color: white;
         .col{
-            background-color: #EDEFEE;
-            // border: 1px solid black;
-            margin: 1rem;
-            border-radius: 15px;
+            // background-color: #EDEFEE;
+
+            
+            .testemonialsWrapper{
+                margin: 1rem;
+                background-color: #EDEFEE;
+                border-radius: 15px;      
+                padding: 2rem;          
+            }    
         }
+        
         h1{
             text-align: center;
             padding: 3rem;
+            font-size: 2rem;
             
+        }
+        p{
+            padding-bottom: 2rem;
         }
     }
     .mainLemonSection{
         margin-top: 3rem;
         h1{
+            font-size: 2rem;
             color: #F4CE14;
             margin-top: 1rem;
         }
         h3{
+            font-size: 1.5rem;
             margin-top: 1rem;
             color: #333333;
         }
@@ -163,11 +183,21 @@ footer{
     .socialMediaLinksFooter{
         padding: 1rem;
         a{
+            font-size: 2rem;
+            padding-left: 1rem;
             text-decoration: none;
             color: #333333;
         }
     }
 }
 
-
+.tableBookingHeader{
+    width: 100%;
+    background-color: #495E57;
+    text-align: center;
+    color:#EDEFEE;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 

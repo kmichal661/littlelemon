@@ -30,6 +30,7 @@ export default function BookingForm(){
 
 
     const formik = useFormik({
+
         initialValues: {
             resdate: "",
             restime: "18:00",
@@ -40,7 +41,12 @@ export default function BookingForm(){
         onSubmit: (values) => {
             let submission = submitAPI(values)
             if(submission){
-                navigate('/booking/confirmed')
+                navigate('/booking/confirmed', {state: {
+                    resdate: values.resdate,
+                    restime: values.restime,
+                    guests: values.guests,
+                    occasion: values.occasion
+                }})
             }
         },
         validationSchema: Yup.object().shape({
@@ -48,7 +54,7 @@ export default function BookingForm(){
             restime: Yup.string().required("Required"),
             guests: Yup.number().max(10, "Maximum Table Size is 10").min(1, "Minimum Table size is 1").required("Required"),
             occasion: Yup.string().required("Required")
-        })
+        }),
 
     })
 
@@ -59,8 +65,11 @@ export default function BookingForm(){
 
     return(
 <>
-
-<VStack w="1024px" p={32} alignItems="flex-start">
+<div className="tableBookingHeader">
+        <h1>Book a Table</h1>
+    </div>
+<VStack p={24} alignItems="flex-center">
+    
 <form onSubmit={formik.handleSubmit}>
     <FormControl isInvalid={formik.errors.resdate && formik.touched.resdate}>
         <FormLabel htmlFor="resdate">Choose date</FormLabel>
@@ -69,6 +78,7 @@ export default function BookingForm(){
         id="resdate"
         value={formik.values.date}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
         ></Input>
 
         <FormErrorMessage>{formik.errors.resdate && formik.touched.resdate ? formik.errors.resdate : <></>}</FormErrorMessage>
@@ -81,6 +91,7 @@ export default function BookingForm(){
         id='restime'
         value={formik.values.restime}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
         >
 
             {availableTimeOptions}
@@ -112,6 +123,7 @@ export default function BookingForm(){
         id="guests"
         value={formik.values.guests}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
         />
 
         <FormErrorMessage>{formik.errors.guests && formik.touched.guests ? formik.errors.guests : <></>}</FormErrorMessage>
@@ -124,6 +136,7 @@ export default function BookingForm(){
         id="occasion"
         value={formik.values.occasion}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
         
         >
             <option>Birthday</option>

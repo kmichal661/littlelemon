@@ -32,8 +32,8 @@ export default function MainSpecials(){
 
     const cardItems = cards.map((card) => {
         return(
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={card.image} width="200" height="180"></Card.Img>
+            <Card style={{ width: '18rem' }} key={card.text}>
+                <Card.Img variant="top" src={card.image} width="200" height="180" style={{width: "100%", height: "240px"}}></Card.Img>
                 <Card.Body>
                     <Card.Title><span>{card.title}</span> <span>{card.price}</span> </Card.Title>
                     <Card.Text> {card.text} </Card.Text>

@@ -10,7 +10,7 @@ function TestemonialCard({name,text, img}){
     return (
         <>
             <Col>
-            <Figure style={{float: "left", paddingTop: "1rem"}}>
+            <Figure className="testemonialsWrapper" style={{float: "left"}}>
                 <Figure.Image
                 width={60}
                 height={70}
@@ -32,7 +32,6 @@ function TestemonialCard({name,text, img}){
                 <p>{text}</p>
             </Figure.Caption>
             </Figure>
-
             </Col>
         </>
     )
@@ -64,14 +63,14 @@ export default function Testemonials(){
         },
     ]
 
-    const testemonialsItems = testemonials.map(i => <TestemonialCard name={i.name} text={i.text} img={i.img} />)
+    const testemonialsItems = testemonials.map(i => <TestemonialCard name={i.name} text={i.text} img={i.img} key={i.name} />)
 
     return(
         <>
             <div className="mainTestemonials">
                 <Container>
                     <h1>Testemonials</h1>
-                    <Row>
+                    <Row xs={1} sm={2} md={2} lg={4}>
                         {testemonialsItems}
                     </Row>
                 </Container>

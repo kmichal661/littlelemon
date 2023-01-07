@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faB  } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee,   } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faGooglePlus } from '@fortawesome/free-brands-svg-icons'
 export default function FooterSocialMedia(){
     return(
         <>
@@ -7,9 +8,9 @@ export default function FooterSocialMedia(){
 
                 <h4>Social Media Links</h4>
                 <br/>
-                <span> <a href="#"> Facebook </a> </span><br/>
-                <span> <a href="#"> Twitter </a> </span><br/>
-                <span> <a href="#"> Google  </a> </span><br/>
+                <span> <a href="#"> <FontAwesomeIcon icon={faFacebook} /> </a> </span>
+                <span> <a href="#"> <FontAwesomeIcon icon={faTwitter} /> </a> </span>
+                <span> <a href="#"> <FontAwesomeIcon icon={faGooglePlus} /> </a> </span>
 
 
             </div>

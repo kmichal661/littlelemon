@@ -1,9 +1,11 @@
 import Logo from '../assets/Logo.svg'
+import {NavLink} from 'react-router-dom'
 
 function Header(){
     return(
         <header>
-            <img src={Logo} alt="logo" />   
+
+           <NavLink to="/"> <img src={Logo} alt="logo" /> </NavLink>   
         </header>
     )
 }

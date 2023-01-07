@@ -10,6 +10,8 @@ body {
 .topSecion {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .topSecion header {
   width: 20vw;
@@ -40,18 +42,24 @@ body {
 
 main .mainHeadSection {
   background-color: #495E57;
+  padding: 2rem;
 }
 main .mainHeadSection h1 {
   margin-top: 4rem;
   color: #F4CE14;
+  font-size: 2rem;
 }
 main .mainHeadSection h2 {
+  margin-top: 2rem;
   color: #EDEFEE;
+  font-size: 1.5rem;
 }
 main .mainHeadSection p {
+  margin-top: 2rem;
   color: #EDEFEE;
 }
 main .mainHeadSection .btn {
+  margin-top: 2rem;
   background-color: #F4CE14;
   color: black;
   font-size: 0.9em;
@@ -77,7 +85,7 @@ main .mainSpecialsSection .cardSection {
 main .mainSpecialsSection .cardSection .card {
   padding: 0;
   margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
   text-align: left;
 }
 main .mainSpecialsSection .cardSection .card .card-title {
@@ -91,23 +99,30 @@ main .mainTestemonials {
   background-color: #495E57;
   color: white;
 }
-main .mainTestemonials .col {
-  background-color: #EDEFEE;
+main .mainTestemonials .col .testemonialsWrapper {
   margin: 1rem;
+  background-color: #EDEFEE;
   border-radius: 15px;
+  padding: 2rem;
 }
 main .mainTestemonials h1 {
   text-align: center;
   padding: 3rem;
+  font-size: 2rem;
+}
+main .mainTestemonials p {
+  padding-bottom: 2rem;
 }
 main .mainLemonSection {
   margin-top: 3rem;
 }
 main .mainLemonSection h1 {
+  font-size: 2rem;
   color: #F4CE14;
   margin-top: 1rem;
 }
 main .mainLemonSection h3 {
+  font-size: 1.5rem;
   margin-top: 1rem;
   color: #333333;
 }
@@ -143,8 +158,20 @@ footer .socialMediaLinksFooter {
   padding: 1rem;
 }
 footer .socialMediaLinksFooter a {
+  font-size: 2rem;
+  padding-left: 1rem;
   text-decoration: none;
   color: #333333;
+}
+
+.tableBookingHeader {
+  width: 100%;
+  background-color: #495E57;
+  text-align: center;
+  color: #EDEFEE;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=App.css.map */

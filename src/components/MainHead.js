@@ -8,7 +8,7 @@ export default function MainHead(){
         
             <div className="container ">
                     <div className="row">
-                            <div className="col-sm">
+                            <div className="col">
                                 <h1>Little Lemon</h1>
                                 <h2>Chicago</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -16,7 +16,7 @@ export default function MainHead(){
                             <div/>
                             
                         </div>
-                        <div className="col-sm imageSection">
+                        <div className="col imageSection">
                                 <div className="imageWrapper">
                                     <img src={MainImage} alt="mainImage" width="240" height="320" />
                                 </div>
