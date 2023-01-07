@@ -201,3 +201,30 @@ footer{
     font-weight: bold;
 }
 
+@media (max-width: 700px){
+    .imageSection{
+        display: none
+    }
+    .mainLemonSection{
+        .col:last-child{
+            display: none;
+        }
+    }
+
+    .topSecion{
+        header{
+            display: none;
+        }
+        nav{
+            margin-bottom: 0rem;
+            padding-left: 0vw;
+            ul{
+                margin-left: 0vw;
+                font-size: 0.8rem;
+                display: flex;
+                ;
+            }
+        }
+    }
+}
+
